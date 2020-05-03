@@ -38,7 +38,7 @@ xing_url: https://www.xing.com/profile/Mathieu_Cartoixa
 youtube_url: https://www.youtube.com/user/cartoixa
 
 # Build settings
-theme: jekyll-theme-prologue
+remote_theme: chrisbobbe/jekyll-theme-prologue
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -50,6 +50,7 @@ plugins:
   - jekyll-optional-front-matter
   - jekyll-paginate
   - jekyll-readme-index
+  - jekyll-remote-theme
   - jekyll-titles-from-headings
   - jekyll-relative-links
 
