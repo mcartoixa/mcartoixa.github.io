@@ -6,7 +6,7 @@ description: >-
   This is my personal page, where I try and gather all my activities on the web, be they professional or personal.
 author: mcartoixa
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mcartoixa.me" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.mcartoixa.me" # the base hostname & protocol for your site, e.g. http://example.com
 avatar: /assets/images/avatar.png
 
 google_analytics: UA-1549201-1
