@@ -40,8 +40,6 @@ youtube_url: https://www.youtube.com/user/cartoixa
 # Build settings
 remote_theme: chrisbobbe/jekyll-theme-prologue
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
   # Default plugins (cf. https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#plugins)
   - jekyll-coffeescript
   - jekyll-default-layout
@@ -53,6 +51,11 @@ plugins:
   - jekyll-remote-theme
   - jekyll-titles-from-headings
   - jekyll-relative-links
+  # Other plugins
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 
 collections:
   sections:
@@ -66,6 +69,9 @@ defaults:
       path: ""
     values:
       image: /assets/images/avatar.png
+
+feed:
+  path: atom.xml
 
 # Exclude from processing.
 # The following items will not be processed, by default.
