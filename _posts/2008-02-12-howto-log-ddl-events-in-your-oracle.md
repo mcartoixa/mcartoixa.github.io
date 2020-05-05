@@ -4,7 +4,6 @@ title: "HowTo: Log DDL events in your Oracle database"
 date: 2008-02-12 13:48:00 +0200
 categories: software-craftsmanship
 tags: howto database oracle version-control
-canonical_url: "http://macinsoft.blogspot.com/2008/02/howto-log-ddl-events-in-your-oracle.html"
 ---
 
 **Update (30/10/2008)**: trigger code updated, due to a bug pointed out by Michel in the comments.

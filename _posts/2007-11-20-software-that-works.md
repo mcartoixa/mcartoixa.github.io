@@ -5,7 +5,6 @@ date: 2007-11-30 18:22:00 +0200
 image: https://commons.wikimedia.org/wiki/File:Crude-oil_pipe_stills,_rundown_tanks,_and_%22Cat_Crackers%22_at_the_Baton_Rouge_Esso_Refinery,_ca._1945_-_NARA_-_535733.jpg
 categories: software-craftsmanship
 tags: opinion development oracle
-canonical_url: "http://macinsoft.blogspot.com/2007/11/software-that-works.html"
 ---
 
 I hate software that works. Deeply. From the bottom of my heart and soul. Let me try to explain why.

@@ -4,7 +4,6 @@ title: "Beware the Image object!"
 date: 2009-09-18 11:38:00 +0200
 categories: software-craftsmanship
 tags: .net
-canonical_url: "http://macinsoft.blogspot.com/2009/09/beware-image-object.html"
 ---
 
 One requirement on the project I am working on (.NET 2.0, Windows Forms) was to make the end-user able to load a background image to an [`InkPicture`](http://msdn.microsoft.com/en-us/library/microsoft.ink.inkpicture.aspx) (which is just a special [`PictureBox`](http://msdn.microsoft.com/en-us/library/system.windows.forms.picturebox.aspx) control, with the ability to be drawn upon on a TabletPC). That did not seem very difficult at first: just create an [`OpenFileDialog`](http://msdn.microsoft.com/en-us/library/system.windows.forms.openfiledialog.aspx) and there you go.

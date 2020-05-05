@@ -5,7 +5,6 @@ date: 2013-03-05 11:30:00 +0200
 image: /assets/images/2013-03-05-installexecutesequence.png
 categories: software-craftsmanship
 tags: howto azure node-js windows installer
-canonical_url: "http://macinsoft.blogspot.com/2013/03/install-nodejs-on-windows-azure-cloud.html"
 ---
 
 [node.js](http://nodejs.org/) is [supported by default on a Windows Azure WebSite](http://www.windowsazure.com/en-us/develop/nodejs/tutorials/create-a-website-(mac)/). But there are cases when you might need to deploy an application on an heavier (and more expensive) Cloud Service. Such a case is when you need SSL on a custom domain, as Azure WebSites [do not yet support custom certificates](http://social.msdn.microsoft.com/Forums/en-US/windowsazurewebsitespreview/thread/0218204f-7be3-4586-bfdb-831cde6b7937).

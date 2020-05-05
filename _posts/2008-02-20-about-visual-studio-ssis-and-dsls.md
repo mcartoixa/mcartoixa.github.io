@@ -5,7 +5,6 @@ date: 2008-02-20 13:51:00 +0200
 image: /assets/images/2008-02-20-ETL.png
 categories: software-craftsmanship
 tags: opinion microsoft
-canonical_url: "http://macinsoft.blogspot.com/2008/02/about-visual-studio-ssis-and-dsls.html"
 ---
 
 I have had the opportunity to discover [Sql Server 2005 Integration Services](http://www.microsoft.com/sql/technologies/integration/default.mspx) (SSIS) lately. That was a double blow. At first, I found it highly usable, though rough on the edges: still only a very promising tool. And then I found it was the perfect example of a software factory created with the [Visual Studio Domain-Specific Language Tools](http://msdn2.microsoft.com/en-us/vs2005/aa718368.aspx). It is great to see Microsoft eating its own dog food, and create a great tool with it.

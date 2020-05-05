@@ -4,7 +4,6 @@ title: "Encrypt configuration file in a custom managed action on x64"
 date: 2009-05-15 16:28:00 +0200
 categories: software-craftsmanship
 tags: howto wix .net x64
-canonical_url: "http://macinsoft.blogspot.com/2009/05/encrypt-configuration-file-in-custom.html"
 ---
 
 When I install a .NET (or ASP .NET) application, I like to encrypt the sensitive parts of the configuration file like the connection strings. So I have been used to create a [Custom Installer class](http://msdn.microsoft.com/en-us/library/system.configuration.install.installer.aspx) to achieve this. There are a few tricky things to take into account, like:

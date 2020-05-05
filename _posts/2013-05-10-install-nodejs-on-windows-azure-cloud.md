@@ -5,7 +5,6 @@ date: 2013-05-10 15:48:00 +0200
 image: /assets/images/2013-05-10-installexecutesequence.png
 categories: software-craftsmanship
 tags: howto azure node-js windows installer
-canonical_url: "http://macinsoft.blogspot.com/2013/05/install-nodejs-on-windows-azure-cloud.html"
 ---
 
 Last time I showed you [how to modify a node.js Windows installer]({%- post_url 2013-03-05-install-nodejs-on-windows-azure-cloud %}) so that you could install it on an Azure Cloud Service as part of a startup task.

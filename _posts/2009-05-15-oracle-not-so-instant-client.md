@@ -4,7 +4,6 @@ title: "Oracle (Not So) Instant Client"
 date: 2009-05-15 11:55:00 +0200
 categories: software-craftsmanship
 tags: howto oracle wix x64
-canonical_url: "http://macinsoft.blogspot.com/2009/05/oracle-not-so-instant-client.html"
 ---
 
 Developing database oriented .NET applications is quite a no brainer once you are used to your API (ADO.NET, Enterprise Library Data Application Block…) or your ORM (NHibernate…). Just pick your database vendor ADO .NET provider, which usually consists of one assembly that you distribute with your application, and that’s it. That is how it works with SQL Server (of course), but also [Teradata](http://www.teradata.com/td/page/149889), [MySQL](http://dev.mysql.com/downloads/connector/net/6.0.html), [PostgreSQL](http://pgfoundry.org/projects/npgsql/), [SQLite](http://sqlite.phxsoftware.com/)… You name it, that is the way it works.

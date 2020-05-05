@@ -4,7 +4,6 @@ title: "Getting better"
 date: 2007-11-30 18:22:00 +0200
 categories: software-craftsmanship
 tags: opinion requirements
-canonical_url: "http://macinsoft.blogspot.com/2007/11/getting-better.html"
 ---
 
 I have had to spend the last few months of my life without... a life! Not that I had much of one before that, but this is not the point. We had this client we had signed a contract with in June for what we all believed to be a small project, due to be released in September. And we only managed to deliver our release last week : a web application (ASP .NET, C# 2.0, Oracle 10g) targeting IIS 6.0 on [Windows Server 2003](http://www.microsoft.com/windowsserver2003/default.mspx) and a desktop application (Forms, C# 2.0, Oracle 10g) on [Windows XP Tablet PC Edition 2005](http://www.microsoft.com/windowsxp/tabletpc/default.mspx). The whole thing amounts to about 185,000 lines of code (according to [CLOC](http://cloc.sourceforge.net/)), if that should ever mean something to you (please share your experience if it does ;-).

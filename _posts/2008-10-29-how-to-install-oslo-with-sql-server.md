@@ -4,7 +4,6 @@ title: "How to install Oslo with SQL Server Express Edition?"
 date: 2008-10-29 18:44:00 +0200
 categories: software-craftsmanship
 tags: howto oslo
-canonical_url: "http://macinsoft.blogspot.com/2008/10/how-to-install-oslo-with-sql-server.html"
 ---
 
 As I was delving into the [Visual Studio DSL Tools](http://msdn.microsoft.com/en-us/library/bb126235.aspx) to design my first DSL for [Salamanca](http://www.codeplex.com/salamanca), I came across this new modeling platform by Microsoft: [Oslo](http://msdn.microsoft.com/en-us/oslo/default.aspx). In fact, it is so new that the first CTP has just [been released](http://code.msdn.microsoft.com/oslo/Release/ProjectReleases.aspx).

@@ -4,7 +4,6 @@ title: "Oracle Instant Client in Visual Studio"
 date: 2009-05-15 14:42:00 +0200
 categories: software-craftsmanship
 tags: howto oracle visual-studio x64
-canonical_url: "http://macinsoft.blogspot.com/2009/05/oracle-instant-client-in-visual-studio.html"
 ---
 
 In [my previous post]({%- post_url 2009-05-15-oracle-not-so-instant-client %}), I mentioned the fact that I added the Oracle [Instant Client](http://www.oracle.com/technology/tech/oci/instantclient/index.html) files as _Content_ files in a Visual Studio project. I would like to write more about this here.
