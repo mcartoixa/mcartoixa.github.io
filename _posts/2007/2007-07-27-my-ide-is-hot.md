@@ -13,6 +13,6 @@ I know I am a bit late to join [this debate](http://www.codinghorror.com/blog/ar
 
 So here it is:
 
-![Visual Studio](/assets/images/2007-07-27-vs-theme.png)
+![Visual Studio](/assets/images/2007/2007-07-27-vs-theme.png)
 
-Having been raised with a DOS [Turbo Pascal](http://en.wikipedia.org/wiki/Turbo_Pascal) environment, I got used to the theme. When I switched to Microsoft tools, I tried to create something close, but with a darker background, which I find more resting. You can download the settings [here](/assets/files/2007-07-27-VSMac.vssettings.zip). I have also posted it on [Ning](http://idehotornot.ning.com/index.php/index/show?id=6129010) (where you might want to rate it).
+Having been raised with a DOS [Turbo Pascal](http://en.wikipedia.org/wiki/Turbo_Pascal) environment, I got used to the theme. When I switched to Microsoft tools, I tried to create something close, but with a darker background, which I find more resting. You can download the settings [here](/assets/files/2007/2007-07-27-VSMac.vssettings.zip). I have also posted it on [Ning](http://idehotornot.ning.com/index.php/index/show?id=6129010) (where you might want to rate it).

@@ -6,7 +6,7 @@ categories: software-craftsmanship
 tags: howto oracle visual-studio x64
 ---
 
-In [my previous post]({%- post_url 2009-05-15-oracle-not-so-instant-client %}), I mentioned the fact that I added the Oracle [Instant Client](http://www.oracle.com/technology/tech/oci/instantclient/index.html) files as _Content_ files in a Visual Studio project. I would like to write more about this here.
+In [my previous post]({%- post_url 2009/2009-05-15-oracle-not-so-instant-client %}), I mentioned the fact that I added the Oracle [Instant Client](http://www.oracle.com/technology/tech/oci/instantclient/index.html) files as _Content_ files in a Visual Studio project. I would like to write more about this here.
 
 If you intend to use your application with Instant Client, you will want to be able to debug it with Instant Client. Which means that the libraries have to be copied along your generated application in the `bin\Debug` folder. The best way to achieve this is to include then as _Content_ files in your project.
 

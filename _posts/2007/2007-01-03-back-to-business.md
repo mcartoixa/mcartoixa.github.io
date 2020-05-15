@@ -11,7 +11,7 @@ As a new year resolution, I have [freely](http://www.nytimes.com/2007/01/02/scie
 The usual way to organize source code for a new project is to create a directory and have your IDE create your solution and your project in it (VS2005 vocabulary, mutatis mutandis for other IDEs/languages). Hopefully, you will stick with it, but more realistically you will have to add new projects for your libraries, executables, installers. You will also have to share resources, files and other scripts between projects. You will start to hack your own project again and again in order to add new resources until it becomes a total mess. You are starting to "lose" (and then duplicate) files (especially resources, like images). Unused files are forgotten and left, only adding to the confusion. This pattern is described for a single developer, but it is even easier and faster to get there with many developers.
 
 Another way would be to have rules (remind me to blog about rules in general) to keep your files consistently organized. Here is my template organization, which is obviously only worth what it is:
-![Sample source code organization](/assets/images/2007-01-03-organization.png)
+![Sample source code organization](/assets/images/2007/2007-01-03-organization.png)
 
 Here the folder hierarchy description:
 * `Work`: the root folder. It may contain general files like `ReadMe.txt`...

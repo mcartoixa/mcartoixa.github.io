@@ -2,7 +2,7 @@
 layout: post
 title: "Install node.js on a Windows Azure Cloud Service"
 date: 2013-03-05 11:30:00 +0200
-image: /assets/images/2013-03-05-installexecutesequence.png
+image: /assets/images/2013/2013-03-05-installexecutesequence.png
 categories: software-craftsmanship
 tags: howto azure node-js windows installer
 ---
@@ -15,9 +15,9 @@ Except that _node.js_ **cannot** be installed on a Cloud Service as is ([yet](ht
 
 Well, there is a way to get around this. We can edit the official installer with [Orca](http://msdn.microsoft.com/en-us/library/windows/desktop/aa370557.aspx), the database table editor for Windows installer packages. It needs to be installed first (the installer can be found along the [Microsoft Windows SDK for Windows 7 and .NET Framework 4](http://www.microsoft.com/en-us/download/details.aspx?id=8442) binaries, in `%ProgramFiles%\Microsoft SDKs\Windows\v7.1\Bin`). Once done, you can right-click the node.js installer and select the _Edit with Orca_ menu.
 
-![Edit with Orca](/assets/images/2013-03-05-edit-with-orca.png)
+![Edit with Orca](/assets/images/2013/2013-03-05-edit-with-orca.png)
 
 As you can see, an installer package is nothing more than a database of all the components and actions performed during the install. Just select the _InstallExecuteSequence_ table, and remove the 3 rows named _WixSchedInternetShortcuts_, _WixRollbackInternetShortcuts_ and _WixCreateInternetShortcuts_.
-![InstallExecuteSequence](/assets/images/2013-03-05-installexecutesequence.png)
+![InstallExecuteSequence](/assets/images/2013/2013-03-05-installexecutesequence.png)
 
 Just save your changes, and there you go: this package will install properly on a Windows Azure Cloud Service. Maybe one day will there be [a command line option](https://github.com/joyent/node/pull/4694) to save us all this trouble…
