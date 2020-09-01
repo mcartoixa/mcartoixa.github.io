@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+#main > article, section {
+    color: #444;
+    font-family: "Open Sans";
+    font-size: 12pt;
+    line-height: normal;
+}
+#main > article code {
+    font-family: "Fira Code", monospace;
+}
+#main > article p, ul, ol, dl, table {
+    margin-bottom: 1em;
+}
+#main > article li > ul, ol, dl {
+    margin-bottom: auto;
+}
+#main > article blockquote {
+  margin-bottom: 1em;
+}
+#main > article blockquote p {
+  margin-bottom: auto;
+}
+#main > article img {
+    height: auto;
+    max-width: 80%;
+    width: auto;
+}
+#main > article nav.series, section.series-pager {
+  border-color: #BABDB6;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px 10px 5px 10px;
+  margin: 2em 10px 2em 10px;
+}
+#main > article nav.series ol {
+  margin-bottom: auto;
+}
