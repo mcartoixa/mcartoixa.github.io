@@ -26,7 +26,7 @@ I am old enough to have worked in a world without Continuous Integration (CI), a
 
 [![Family Tensions](https://faasandfurious.com/pages/family-tensions.png)](https://faasandfurious.com/119)
 
-This is why I have decided to start this series of posts to try and lay down what are *my views* on this matter. The goal is not to convince anybody that I am right, but rather to engage a discussion with [those who are willing to try and understand before disagreeing](https://www.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html):
+This is why I have decided to start this series of posts to try and lay down what *my views* are on this matter. The goal is not to convince anybody that I am right, but rather to engage a discussion with [those who are willing to try and understand before disagreeing](https://www.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html):
 > To disagree well you must first *understand* well.
 
 YMMV, the scope of your projects might require a different organization based on other principles and this is fine (unless of course we happen to be working together [in which case I am right](https://www.youtube.com/watch?v=E_LUGY_ptGA), obviously).
