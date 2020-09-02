@@ -2,19 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 
 #main > article, section {
-    color: #444;
-    font-family: "Open Sans";
-    font-size: 12pt;
-    line-height: normal;
-}
-#main > article code {
-    font-family: "Fira Code", monospace;
-}
-#main > article p, ul, ol, dl, table {
-    margin-bottom: 1em;
-}
-#main > article li > ul, ol, dl {
-    margin-bottom: auto;
+  color: #444;
+  font-family: "Open Sans";
+  font-size: 12pt;
+  line-height: normal;
 }
 #main > article blockquote {
   margin-bottom: 1em;
@@ -22,10 +13,35 @@
 #main > article blockquote p {
   margin-bottom: auto;
 }
+#main > article code {
+  font-family: "Fira Code", monospace;
+}
+#main > article header {
+  background-blend-mode: lighten;
+  background-image: white url("/assets/images/nyc-mac.jpg");
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  overflow: hidden;
+  padding: 2em;
+  text-shadow: 0 0 2px white, 2px 2px 4px white;
+  width: 100%;
+}
+#main > article header > h2, header > p {
+  color: #333;
+  font-weight: bolder;
+}
+#main > article header > h2 {
+  font-size: 3em;
+}
 #main > article img {
-    height: auto;
-    max-width: 80%;
-    width: auto;
+  height: auto;
+  max-width: 80%;
+  width: auto;
+}
+#main > article li > ul, ol, dl {
+  margin-bottom: auto;
 }
 #main > article nav.series, section.series-pager {
   border-color: #BABDB6;
@@ -36,4 +52,7 @@
 }
 #main > article nav.series ol {
   margin-bottom: auto;
+}
+#main > article p, ul, ol, dl, table {
+  margin-bottom: 1em;
 }

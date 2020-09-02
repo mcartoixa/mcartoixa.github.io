@@ -8,9 +8,9 @@ layout: default
     <!-- Post -->
     <article class="shade-two">
         <div class="container">
-            <header>
+            <header{% if page.image %} style="background-image: url('{{ page.image }}');"{% endif %}>
                 <h2>{{- page.title -}}</h2>
-                <p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
+                <p>{% if page.author %}{{ page.author }}, {% endif %}<time datetime="{{- page.date | date_to_xmlschema }}">{{- page.date | date_to_long_string -}}</time></p>
             </header>
             {%- if page.series %}
             <nav class="series">

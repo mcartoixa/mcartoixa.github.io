@@ -2,6 +2,7 @@
 layout: post
 title: "What is Continuous Integration?"
 date: 2020-08-30 15:27:00 +0200
+image: /assets/images/2020/2020-about-continuous-integration.png
 categories: software-craftsmanship
 tags: continuous-integration
 series: 2020-about-continuous-integration

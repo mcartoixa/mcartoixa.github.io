@@ -2,6 +2,7 @@
 layout: post
 title: "My take on Continuous Integration"
 date: 2020-09-02 08:30:00 +0200
+image: /assets/images/2020/2020-about-continuous-integration.png
 categories: software-craftsmanship
 tags: continuous-integration principles practices
 series: 2020-about-continuous-integration

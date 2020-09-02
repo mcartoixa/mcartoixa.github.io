@@ -74,6 +74,7 @@ defaults:
       type: "posts"
     values:
       comments: true
+      image: /assets/images/nyc-mac.jpg
 
 feed:
   path: atom.xml
