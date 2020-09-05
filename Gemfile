@@ -21,6 +21,6 @@ end
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 # Build
-gem 'rake', '10.4.2'
+gem 'rake', '12.3.3'
 gem 'html-proofer'
 gem 'rubyzip'
