@@ -98,3 +98,12 @@ feed:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - build/
+  - build.sh
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - tmp/
+  - vendor/

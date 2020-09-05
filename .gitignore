@@ -1,6 +1,7 @@
-_drafts
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+build.log
+
+_drafts/
+_site/
+.jekyll-cache/
+tmp/
+vendor/bundle/
