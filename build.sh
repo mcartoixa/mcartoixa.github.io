@@ -28,7 +28,7 @@ run() {
   if bundle check > /dev/null; then
     bundle clean
   else
-    bundle install --standalone --clean
+    bundle install --standalone
   fi
 
   bundle exec rake build:${TASK}

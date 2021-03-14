@@ -2,6 +2,7 @@
 
 require 'fileutils'
 require 'html-proofer'
+require 'jekyll'
 require 'rake/clean'
 require 'zip'
 
@@ -15,21 +16,31 @@ OUT_BIN_PATH = TMP_PATH + 'out/bin/'
 CLOBBER.include(TMP_PATH)
 
 namespace 'build' do
+    task 'prepare' do
+      ENV['JEKYLL_ENV'] = 'production'
+    end
+
     # clean
     desc 'Cleans the workspace'
-    task 'clean' => %w[clobber]
+    task 'clean' => %w[prepare clobber]
     task 'clean' do
-      sh 'jekyll', 'clean'
+      Jekyll::Commands::Clean.process({})
     end
 
     #compile
     desc 'Compiles the project'
+    task 'compile' => %w[prepare]
     task 'compile' do
-      sh 'jekyll', 'build', '-d' + OBJ_BIN_PATH, 'JEKYLL_ENV=production', '--strict_front_matter'
+      config = Jekyll.configuration({
+        'destination' => OBJ_BIN_PATH,
+        'strict_front_matter' => true
+      })
+      site = Jekyll::Site.new(config)
+      Jekyll::Commands::Build.build(site, config)
     end
 
     #test
-    task 'test' => %w[compile]
+    task 'test' => %w[prepare compile]
     task 'test' do
       options = {
         :allow_hash_href => true,
@@ -52,8 +63,9 @@ namespace 'build' do
 
     # analyze
     desc 'Analyzes the project'
+    task 'analyze' => %w[prepare]
     task 'analyze' do
-      sh 'jekyll', 'doctor'
+      Jekyll::Commands::Doctor.process({})
     end
 
     # package
@@ -72,7 +84,7 @@ namespace 'build' do
       task 'build' => PACKAGE_FILE
     end
     desc 'Creates the packages'
-    task 'package' => %w[package:build]
+    task 'package' => %w[prepare package:build]
 
     # build
     desc 'Builds the project'
