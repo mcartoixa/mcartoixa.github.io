@@ -47,6 +47,7 @@ Then we need a new website:
 Make sure your application is accessible by [opening the Windows Firewall if necessary](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/checklist-creating-inbound-firewall-rules) (on TCP port 300 in my case).
 
 ### Configure the website
+
 Configure the website by adding the following configuration (cf. [Configure Python web apps for IIS](https://docs.microsoft.com/en-us/visualstudio/python/configure-web-apps-for-iis-windows)) in a file called `web.config` inside the `pgadmin` folder that you just created (you can use Notepad):
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -56,15 +57,15 @@ Configure the website by adding the following configuration (cf. [Configure Pyth
       <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
     </handlers>
     <httpPlatform
-       processPath="%ProgramFiles%\pgAdmin 4\v4\runtime\python.exe"
-       arguments="&quot;%ProgramFiles%\pgAdmin 4\v4\web\pgAdmin4.py&quot;"
+       processPath="%ProgramFiles%\pgAdmin 4\v5\python\python.exe"
+       arguments="&quot;%ProgramFiles%\pgAdmin 4\v5\web\pgAdmin4.py&quot;"
        stdoutLogEnabled="true"
        stdoutLogFile="C:\inetpub\logs\pgadmin\pgAdmin4.log"
        startupTimeLimit="60"
        processesPerApplication="1">
       <environmentVariables>
         <environmentVariable name="PGADMIN_INT_PORT" value="%HTTP_PLATFORM_PORT%" />
-        <environmentVariable name="PYTHONHOME" value="%ProgramFiles%\pgAdmin 4\v4\venv" />
+        <environmentVariable name="PYTHONHOME" value="%ProgramFiles%\pgAdmin 4\v5\python" />
         <environmentVariable name="SERVER_MODE" value="True" />
       </environmentVariables>
     </httpPlatform>
@@ -95,3 +96,31 @@ Now you can start the website. Enjoy!
 Note that the application will recycle automatically every 29 hours by default, which means that the next request will take much longer while the process is restarted. Not such a bad thing by itself, but obviously [this behaviour can be changed](https://docs.microsoft.com/en-us/iis/configuration/system.applicationhost/applicationpools/add/recycling/).
 
 Also note that the logging folder should be cleaned up from time to time...
+
+**UPDATE 2021-05-29:** the website configuration has been udpated for version 5 of pgAdmin... 4! Here is the configuration for version 4:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
+    </handlers>
+    <httpPlatform
+       processPath="%ProgramFiles%\pgAdmin 4\v4\runtime\python.exe"
+       arguments="&quot;%ProgramFiles%\pgAdmin 4\v4\web\pgAdmin4.py&quot;"
+       stdoutLogEnabled="true"
+       stdoutLogFile="C:\inetpub\logs\pgadmin\pgAdmin4.log"
+       startupTimeLimit="60"
+       processesPerApplication="1">
+      <environmentVariables>
+        <environmentVariable name="PGADMIN_INT_PORT" value="%HTTP_PLATFORM_PORT%" />
+        <environmentVariable name="PYTHONHOME" value="%ProgramFiles%\pgAdmin 4\v4\venv" />
+        <environmentVariable name="SERVER_MODE" value="True" />
+      </environmentVariables>
+    </httpPlatform>
+    <modules>
+      <remove name="WebDAVModule" />
+    </modules>
+  </system.webServer>
+</configuration>
+```
