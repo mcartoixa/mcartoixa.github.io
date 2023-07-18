@@ -9,7 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.mcartoixa.me" # the base hostname & protocol for your site, e.g. http://example.com
 avatar: /assets/images/avatar.png
 
-google_analytics: UA-1549201-1
+google_analytics: G-0BMMJFSH36
 twitter:
   username: mcartoixa
   card: summary
