@@ -8,7 +8,7 @@ tags: continuous-integration php phing
 series: 2020-about-continuous-integration
 ---
 
-It has been a very long time since I have used PHP in any capacity for web development. And I am not planning doing so again any time soon (sorry). But I have had the opportunity to apply [my practices]({% post_url 2020-09-02-my-take-on-continuous-integration %}) on a very small, though still useful scale in PHP. From what I could gather it is indeed very possible to properly and continuously integrate PHP projects, provided you use the right tools for the job: a build tool and a dependency manager (optional but always recommended).
+It has been a very long time since I have used PHP in any capacity for web development. And I am not planning doing so again any time soon (sorry). But I have had the opportunity to apply [my practices]({% post_url 2020/2020-09-02-my-take-on-continuous-integration %}) on a very small, though still useful scale in PHP. From what I could gather it is indeed very possible to properly and continuously integrate PHP projects, provided you use the right tools for the job: a build tool and a dependency manager (optional but always recommended).
 
 * [A simple project](#a-simple-project)
 * [A more complete project](#a-more-complete-project)
@@ -24,7 +24,7 @@ The main elements of the project are:
 ### The build file
 Given my lack of recent experience with the technology I was a bit worried at first about the state of software development in PHP. But it turned out surprisingly pretty decent: you can find a fine dependency manager in [Composer](https://getcomposer.org/) and a very decent build tool in [Phing](https://www.phing.info/). It is based on the old timer [Apache Ant](https://ant.apache.org/) and so probably suffers from the same drawbacks (that I will cover in a subsequent post). But like the original: as long as you respect the tool (which involves understanding it...) you can go pretty far with it.
 
-So [Phing](https://www.phing.info/) it is, and the `build.xml` file defines the following targets (pretty much consistent with what we have already seen in [.NET]({% post_url 2020-09-07-continuous-integration-for-the-net-framework %}), [node.js]({% post_url 2020-09-14-continuous-integration-for-nodejs %}) and [Ruby]({% post_url 2020-09-21-continuous-integration-for-ruby %})):
+So [Phing](https://www.phing.info/) it is, and the `build.xml` file defines the following targets (pretty much consistent with what we have already seen in [.NET]({% post_url 2020/2020-09-07-continuous-integration-for-the-net-framework %}), [node.js]({% post_url 2020/2020-09-14-continuous-integration-for-nodejs %}) and [Ruby]({% post_url 2020/2020-09-21-continuous-integration-for-ruby %})):
 * *clean*: cleans the build (the `tmp\` directory).
 * *build*: runs [PHPLint](https://github.com/overtrue/phplint) on the source code and copies the source code and the dependencies in the `tmp\out\bin` folder.
   * If I had to do it today I would probably isolate the first action in an *analyze* target. The second action would do well in the *package* target. My own consistency evolves over time...

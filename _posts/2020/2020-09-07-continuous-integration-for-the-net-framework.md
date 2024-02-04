@@ -8,7 +8,7 @@ tags: continuous-integration dotnet msbuild
 series: 2020-about-continuous-integration
 ---
 
-I realize writing this post that I have been practicing .NET development (C# in particular) since 2005 (15 years!). It is natural for [my Continuous Integration practices]({% post_url 2020-09-02-my-take-on-continuous-integration %}) to have been heavily influenced by this platform during all this time. The advent of .NET Core will be the occasion to revisit these, and also the subject of another blog post. This post shows what those years of maturation led to on the (soon legacy) .NET Framework platform.
+I realize writing this post that I have been practicing .NET development (C# in particular) since 2005 (15 years!). It is natural for [my Continuous Integration practices]({% post_url 2020/2020-09-02-my-take-on-continuous-integration %}) to have been heavily influenced by this platform during all this time. The advent of .NET Core will be the occasion to revisit these, and also the subject of another blog post. This post shows what those years of maturation led to on the (soon legacy) .NET Framework platform.
 
 * [A simple project](#a-simple-project)
 * [A more complete project](#a-more-complete-project)

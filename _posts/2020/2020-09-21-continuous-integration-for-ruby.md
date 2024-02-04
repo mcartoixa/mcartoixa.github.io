@@ -8,7 +8,7 @@ tags: continuous-integration ruby rake
 series: 2020-about-continuous-integration
 ---
 
-I have had to deal with a few projects in Ruby recently and I have tried to adapt [my practices]({% post_url 2020-09-02-my-take-on-continuous-integration %}) to this new environment. On a personal level this means less cognitive load when I have to come back to these projects months later, even more so because Ruby is far from my area of expertise. As it happens I have had quite some trouble implementing Continuous Integration because of (seemingly) conflicting conventions. But I have tried anyway:
+I have had to deal with a few projects in Ruby recently and I have tried to adapt [my practices]({% post_url 2020/2020-09-02-my-take-on-continuous-integration %}) to this new environment. On a personal level this means less cognitive load when I have to come back to these projects months later, even more so because Ruby is far from my area of expertise. As it happens I have had quite some trouble implementing Continuous Integration because of (seemingly) conflicting conventions. But I have tried anyway:
 
 * [A simple project](#a-simple-project)
 * [A more complete project](#a-more-complete-project)
@@ -141,7 +141,7 @@ This is where the trouble really begins. Having tried to apply the same principl
 * some tools have *memory*. [Bundler](https://bundler.io/) will remember your current environment (*development*, *production*) for instance.
 * worse, the so called [*Deployment Mode*](https://bundler.io/v2.1/man/bundle-install.1.html#DEPLOYMENT-MODE) will explicitely screw up your development environment.
 
-Hard to [run your build locally]({% post_url 2020-09-02-my-take-on-continuous-integration %}#build-in-1-step) with these features!... This is not intended as a rant though, and if you have some insight on how to reconcile both worlds: please share.
+Hard to [run your build locally]({% post_url 2020/2020-09-02-my-take-on-continuous-integration %}#build-in-1-step) with these features!... This is not intended as a rant though, and if you have some insight on how to reconcile both worlds: please share.
 
 Though I cannot share a real and complete project here I can show Rakefile elements that can be of some use:
 * how to run Ruby to check your source files syntax (this goes in the *build:compile* target):

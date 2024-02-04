@@ -8,7 +8,7 @@ tags: continuous-integration node-js gulp-js
 series: 2020-about-continuous-integration
 ---
 
-Applying [the same principles]({% post_url 2020-09-02-my-take-on-continuous-integration %}) to node.js is interesting because this is an entirely different world from .NET (for the best and for the worst):
+Applying [the same principles]({% post_url 2020/2020-09-02-my-take-on-continuous-integration %}) to node.js is interesting because this is an entirely different world from .NET (for the best and for the worst):
 * Javascript is interpreted: there is no compiler and no inherent notion of packaging.
 * the platform is very fragmented: even the package manager seems to be up for grabs ([stigmergy](http://videos.ncrafts.io/video/223266261), anyone?).
 
@@ -48,7 +48,7 @@ Key elements of the build system are:
   })
   ```
 
-Consistency reduces my cognitive load, thus the targets defined in the build file (`gulpfile.js`) are more or less the same [as in .NET]({% post_url 2020-09-07-continuous-integration-for-the-net-framework %}#the-build-file):
+Consistency reduces my cognitive load, thus the targets defined in the build file (`gulpfile.js`) are more or less the same [as in .NET]({% post_url 2020/2020-09-07-continuous-integration-for-the-net-framework %}#the-build-file):
 * *clean*: cleans the build (the `tmp\` directory).
 * *compile*: "compiles" (ie minifies) the source code using [UglifyJS](https://github.com/mishoo/UglifyJS#readme).
 * *analysis*: performs static analysis on the project with [eslint](https://eslint.org/), and then gathers statistics using [the cloc utility](https://github.com/AlDanial/cloc).
@@ -75,7 +75,7 @@ And then as a convenience, for ease of use and discovery of our system, these ta
 ```
 
 ### The script file
-Nothing new here, as the whole build has been described above and the script is just here to allow us to easily [build locally]({% post_url 2020-09-02-my-take-on-continuous-integration %}#build-in-1-step):
+Nothing new here, as the whole build has been described above and the script is just here to allow us to easily [build locally]({% post_url 2020/2020-09-02-my-take-on-continuous-integration %}#build-in-1-step):
 ```
 CALL npm.cmd install --no-package-lock --no-shrinkwrap --loglevel info --cache .tmp\npm-cache
 CALL npm.cmd run-script %TARGET% --loglevel %VERBOSITY%
@@ -120,4 +120,4 @@ script:
 ## A more complete project
 Well, I do not think I have much to show you here. But every useful concept has been touched in the above (not so simple then) project. Simply know that I have been able to integrate this pipeline with success in other kinds of projects:
 * Chrome extensions, which required JSON transformation of configuration files depending on the environment (to set up OAuth credentials for instance).
-* proper node.js projects (backend and frontend). The main trick there is to be able to create [a deployable package]({% post_url 2020-09-02-my-take-on-continuous-integration %}#create-deployable-packages): you will want to execute `npm install --production` in a temporary folder, along with a copy of your backend source files, to be sure to package only the dependencies that are relevant to production. I leave it as an exercise for you, but remember you have the whole power of Javascript at your disposal (instead of YAML or JSON), so this should be fairly achievable (I did that using [grunt.js](https://gruntjs.com/) a looong time ago).
+* proper node.js projects (backend and frontend). The main trick there is to be able to create [a deployable package]({% post_url 2020/2020-09-02-my-take-on-continuous-integration %}#create-deployable-packages): you will want to execute `npm install --production` in a temporary folder, along with a copy of your backend source files, to be sure to package only the dependencies that are relevant to production. I leave it as an exercise for you, but remember you have the whole power of Javascript at your disposal (instead of YAML or JSON), so this should be fairly achievable (I did that using [grunt.js](https://gruntjs.com/) a looong time ago).
