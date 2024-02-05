@@ -56,3 +56,10 @@
 #main > article p, ul, ol, dl, table {
   margin-bottom: 1em;
 }
+
+#main > section > div.container div {
+  margin-top: 1em;
+}
+#main > section > div.container div.content {
+  text-align: left;
+}
