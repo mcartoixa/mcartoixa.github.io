@@ -63,3 +63,7 @@
 #main > section > div.container div.content {
   text-align: left;
 }
+
+img.back {
+  filter: brightness(50%);
+}
