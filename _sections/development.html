@@ -7,14 +7,32 @@ icon: fa-code
 order: 3
 ---
 
-<div>
-  <a href="http://github.com/mcartoixa" class="gh-contributions" data-gh-username="mcartoixa" target="_blank">mcartoixa</a>
-  <script src="https://ikuwow.github.io/yourcontributions/widget.min.js"></script>
-</div>
-
-<div>
-  <a class="fa-brands fa-github fa-2x" href="{{site.github_url}}"></a>
-  <a class="fa-brands fa-bitbucket fa-2x" href="{{site.bitbucket_url}}"></a>
-  <a class="fa-brands fa-dev fa-2x" href="{{site.dev_url}}"></a>
-  <a class="fa-brands fa-stack-overflow fa-2x" href="{{site.stackoverflow_url}}"></a>
+<div class="content">
+  <div class="row">
+    <div class="4u 12u$(mobile)">
+      <div class="item">
+        <a href="{{site.github_url}}" class="image fit"><img
+            src="{{ 'assets/images/home/github.png' | relative_url }}" alt="GitHub" /></a>
+        <header>
+          <h3><i class="fa-brands fa-github"></i> GitHub</h3>
+        </header>
+      </div>
+    </div>
+    <div class="4u 12u$(mobile)">
+      <div class="item">
+        <a href="{{site.dev_url}}" class="image fit"><img src="{{ 'assets/images/home/dev.png' | relative_url }}" alt="DEV" /></a>
+        <header>
+          <h3><i class="fa-brands fa-dev"></i> DEV</h3>
+        </header>
+      </div>
+    </div>
+    <div class="4u 12u$(mobile)">
+      <div class="item">
+        <a href="{{site.stackoverflow_url}}" class="image fit"><img src="{{ 'assets/images/home/stackoverflow.png' | relative_url }}" alt="Stack Overflow" /></a>
+        <header>
+          <h3><i class="fa-brands fa-stack-overflow"></i> Stack Overflow</h3>
+        </header>
+      </div>
+    </div>
+  </div>
 </div>
