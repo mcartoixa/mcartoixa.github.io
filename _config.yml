@@ -2,7 +2,7 @@ title: Mathieu Cartoixa
 subtitle: Software Craftsman
 #email: your-email@example.com
 description: >-
-  I am a Software Craftsman who loves music, photography and travels, amongst many other interests.
+  I am <a href="/about/cv.html">a Software Craftsman</a> who loves music, photography and travels, amongst many other interests.
   This is my personal page, where I try and gather all my activities on the web, be they professional or personal.
 author: mcartoixa
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -16,10 +16,9 @@ twitter:
 social:
   name: Mathieu Cartoixa
   links:
-    - https://twitter.com/mcartoixa
-    - https://www.facebook.com/mathieu.cartoixa
     - https://www.linkedin.com/in/cartoixa/
     - https://github.com/mcartoixa
+    - https://bsky.app/profile/mcartoixa.me
 
 bitbucket_url: https://bitbucket.org/mcartoixa/
 bluesky_url: https://bsky.app/profile/mcartoixa.me
@@ -68,6 +67,8 @@ collections:
   posts:
     output: true
     permalink: /blog/:categories/:year/:month/:day/:title:output_ext
+  about:
+    output: true
 
 defaults:
   - scope:
@@ -83,6 +84,10 @@ defaults:
 
 feed:
   path: atom.xml
+
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -104,7 +109,7 @@ feed:
 #   - vendor/gems/
 #   - vendor/ruby/
 exclude:
-  - build/
+  - .build/
   - build.sh
   - CNAME
   - Gemfile
