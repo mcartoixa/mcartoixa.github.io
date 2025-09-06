@@ -21,11 +21,16 @@
             {%- if post.author.name %}
             <dc:creator>{{ post.author.name | xml_escape }}</dc:creator>
             {%- endif %}
+            <description>
             {%- if post.excerpt %}
-            <description>{{ post.excerpt | xml_escape }}</description>
+            {{ post.excerpt | xml_escape }}
             {%- else %}
-            <description>{{ post.content | xml_escape }}</description>
+            {{ post.content | xml_escape }}
             {%- endif %}
+            {%- if jekyll.environment == 'production' -%}
+            &lt;img src="https://tinylytics.app/pixel/YTpdtwVFGaXTzYyCjW1Z.gif?path={{ post.url | xml_escape }}" alt="" style="width:1px;height:1px;border:0;" /&gt;
+            {%- endif %}
+            </description>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
             <link>{{ site.url }}{{ post.url }}</link>
             <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
